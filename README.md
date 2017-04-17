@@ -6,9 +6,19 @@ Useful tools for a Raspberry Pi
 Sends the current IP addresses assigned to the PI to a defined mail address.
 This helps you connecting to a Pi it is connected to a network with dynamically assigned IP addresses.
 
+### Required Python libraries
+Make sure that you have the python library netifaces installed.
+
+```
+sudo pip install netifaces
+```
+
+### How to get it run after each startup 
+
 This scrip can be run automatically after the boot.
 For that, you can create a launcher script that is called by cron after every startup.
 Within that script, everything that must be called after startup can be added.
+
 
 ```bash
 #!/bin/sh
